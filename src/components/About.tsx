@@ -73,9 +73,9 @@ export default function About() {
           className="flex flex-wrap gap-3 lg:gap-4 justify-center mb-12 lg:mb-16 2xl:mb-20"
         >
           {[
-            { icon: '🐙', label: 'GitHub', href: '#' },
-            { icon: '💼', label: 'LinkedIn', href: '#' },
-            { icon: '✉️', label: 'Mail', href: '#' },
+            { icon: '🐙', label: 'GitHub', href: 'https://github.com/abhishekakurhade' },
+            { icon: '💼', label: 'LinkedIn', href: 'https://linkedin.com/in/abhishek-kurhade' },
+            { icon: '✉️', label: 'Mail', href: 'mailto:abhishekakurhade@gmail.com' },
           ].map((social) => (
             <motion.a
               key={social.label}
