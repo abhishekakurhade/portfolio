@@ -1,0 +1,210 @@
+.section {
+  padding: 3rem 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 3rem 4rem;
+  }
+}
+
+.sectionTitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-on-surface);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleLine {
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--color-primary);
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tiltWrapper {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.thumb {
+  height: 12rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.thumbOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbOverlay:hover span {
+  transform: scale(1.1);
+}
+
+.body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-on-surface);
+  margin-bottom: 0.5rem;
+}
+
+.projectDesc {
+  font-family: 'Geist', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-on-surface-variant);
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.category {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.dot {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}
+
+.categoryLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--color-on-surface-variant);
+}
+
+.arrowLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.arrowLink:hover {
+  transform: translateY(-2px) translateX(2px);
+}
+
+/* Tech Badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* GitHub CTA */
+.githubCta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.githubCtaText {
+  font-family: 'Geist', sans-serif;
+  font-size: 16px;
+  color: var(--color-on-surface-variant);
+}
+
+.githubBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid rgba(208, 188, 255, 0.3);
+  color: var(--color-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.githubBtn:hover {
+  background: rgba(208, 188, 255, 0.08);
+  border-color: rgba(208, 188, 255, 0.6);
+  box-shadow: 0 0 20px rgba(208, 188, 255, 0.15);
+}
+

@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: #0e0e0e;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-on-surface);
+  letter-spacing: -0.02em;
+}
+
+.credit {
+  font-family: 'Geist', sans-serif;
+  font-size: 18px;
+  color: var(--color-tertiary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .credit {
+    text-align: left;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-on-surface-variant);
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.socialIcon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-tertiary-fixed-dim);
+  transform: translateY(-4px);
+}
